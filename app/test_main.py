@@ -44,6 +44,6 @@ class TestGetCoinCombination:
     def should_raise_type_error_if_cents_wrong_type(
             self,
             cents: int,
-            expected_error: type[TypeError]):
+            expected_error: type[TypeError]) -> None:
         with pytest.raises(expected_error):
             get_coin_combination(cents)
